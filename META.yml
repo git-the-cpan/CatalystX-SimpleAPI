@@ -4,10 +4,11 @@ author:
   - 'Jay Kuri (jayk) C<< <jayk@cpan.org> >>.'
   - 'Jay Kuri <jayk@cpan.org>'
 build_requires:
+  Catalyst::TraitFor::Request::DecodedParams: 0
+  CatalystX::RoleApplicator: 0
   ExtUtils::MakeMaker: 6.42
   MooseX::Declare: 0
   Test::More: 0
-  Try::Tiny: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
@@ -24,13 +25,13 @@ no_index:
 requires:
   Catalyst::Runtime: 5.80029
   JSON::Any: 0
-  JSON::XS: 0
   LWP::UserAgent: 0
   Moose: 0
   MooseX::MethodAttributes: 0
+  Try::Tiny: 0
   URI: 0
   namespace::autoclean: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/wreis/CatalystX-SimpleAPI.git
-version: 0.01
+version: 0.02
